@@ -2,6 +2,9 @@ package main
 
 import "math"
 
+// findMinimum finds the minimum value in an array of integers.
+// Time O(n), space O(1).
+
 func findMinimum(arr []int) int {
 
 	if len(arr) == 0 {

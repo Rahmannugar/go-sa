@@ -1,12 +1,15 @@
 package main
 
+// findTotalSum calculates the total sum of an array of integers.
+// Time O(n), space O(1).
+
 func findTotalSum(arr []int) int {
 	sum := 0
 
 	if len(arr) == 0 {
 		return 0 // Return 0 for empty array
 	}
-	
+
 	for _, num := range arr {
 		sum += num
 	}
