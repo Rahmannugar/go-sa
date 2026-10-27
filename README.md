@@ -16,6 +16,7 @@ Go implementations of data structures and algorithms exercises from a [Boot.dev 
 | [`insertion-sort`](insertion-sort/) | Sort integers by inserting each value into its position. |
 | [`merge-sort`](merge-sort/) | Sort integers by splitting and merging slices. |
 | [`quick-sort`](quick-sort/) | Sort integers in place by partitioning around a pivot. |
+| [`exponentials`](exponentials/) | Calculate Fibonacci numbers and generate a power set. |
 
 Each directory has a standalone `main.go` with example inputs. To run an exercise from the repository root, use:
 
@@ -30,5 +31,6 @@ go run ./bubble-sort
 go run ./insertion-sort
 go run ./merge-sort
 go run ./quick-sort
+go run ./exponentials
 ```
 
