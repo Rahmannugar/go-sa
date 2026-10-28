@@ -17,6 +17,8 @@ Go implementations of data structures and algorithms exercises from a [Boot.dev 
 | [`merge-sort`](merge-sort/) | Sort integers by splitting and merging slices. |
 | [`quick-sort`](quick-sort/) | Sort integers in place by partitioning around a pivot. |
 | [`exponentials`](exponentials/) | Calculate Fibonacci numbers and generate a power set. |
+| [`data-structures`](data-structures/) | Count matching job titles and find the last work experience. |
+| [`stacks`](stacks/) | Use a generic stack to check balanced parentheses. |
 
 Each directory has a standalone `main.go` with example inputs. To run an exercise from the repository root, use:
 
@@ -32,5 +34,7 @@ go run ./insertion-sort
 go run ./merge-sort
 go run ./quick-sort
 go run ./exponentials
+go run ./data-structures
+go run ./stacks
 ```
 
