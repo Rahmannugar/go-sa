@@ -7,7 +7,7 @@ type Queue[T any] struct {
 }
 
 // enqueue adds an item to the back of the queue.
-// Time complexity: O(1) amortized, Space complexity: O(1) extra
+// Time complexity: O(1) amortized, Space complexity: O(1)
 func (q *Queue[T]) enqueue(item T) {
 	q.items = append(q.items, item)
 }

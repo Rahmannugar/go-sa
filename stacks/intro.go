@@ -5,7 +5,7 @@ type Stack[T any] struct {
 }
 
 // push adds an item to the top of the stack.
-// Time complexity: O(1) amortized, Space complexity: O(1) extra
+// Time complexity: O(1) amortized, Space complexity: O(1)
 func (s *Stack[T]) push(item T) {
 	s.items = append(s.items, item)
 }

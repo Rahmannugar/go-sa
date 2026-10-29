@@ -20,6 +20,7 @@ Go implementations of data structures and algorithms exercises from a [Boot.dev 
 | [`data-structures`](data-structures/) | Count matching job titles and find the last work experience. |
 | [`stacks`](stacks/) | Use a generic stack to check balanced parentheses. |
 | [`queues`](queues/) | Enqueue, peek, and dequeue items in first-in, first-out order. |
+| [`linked-lists`](linked-lists/) | Add, remove, and traverse nodes in a singly linked list. |
 
 Each directory has a standalone `main.go` with example inputs. To run an exercise from the repository root, use:
 
@@ -38,5 +39,6 @@ go run ./exponentials
 go run ./data-structures
 go run ./stacks
 go run ./queues
+go run ./linked-lists
 ```
 
