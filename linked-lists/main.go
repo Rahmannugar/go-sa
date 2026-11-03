@@ -9,6 +9,7 @@ type Node[T any] struct {
 
 type LinkedList[T any] struct {
 	head *Node[T]
+	size int
 }
 
 // addToHead inserts a value at the beginning of the list.
@@ -18,6 +19,7 @@ func (l *LinkedList[T]) addToHead(value T) {
 
 	newNode.next = l.head
 	l.head = newNode
+	l.size++
 }
 
 // addToTail inserts a value at the end of the list.
@@ -27,6 +29,7 @@ func (l *LinkedList[T]) addToTail(value T) {
 
 	if l.head == nil {
 		l.head = newNode
+		l.size++
 		return
 	}
 
@@ -37,9 +40,11 @@ func (l *LinkedList[T]) addToTail(value T) {
 	}
 
 	current.next = newNode
+	l.size++
 }
 
-// removeFromHead removes and returns the first value, or false if the list is empty.
+// removeFromHead removes and returns the first value.
+// Returns false if the list is empty.
 // Time complexity: O(1), Space complexity: O(1)
 func (l *LinkedList[T]) removeFromHead() (T, bool) {
 	if l.head == nil {
@@ -49,8 +54,15 @@ func (l *LinkedList[T]) removeFromHead() (T, bool) {
 
 	value := l.head.value
 	l.head = l.head.next
+	l.size--
 
 	return value, true
+}
+
+// sizeOf returns the number of nodes.
+// Time complexity: O(1), Space complexity: O(1)
+func (l *LinkedList[T]) sizeOf() int {
+	return l.size
 }
 
 // forEach calls fn for every value from head to tail.
@@ -83,4 +95,6 @@ func main() {
 		fmt.Printf("%d ", value)
 	})
 	fmt.Println()
+
+	fmt.Println("Size:", list.sizeOf())
 }
