@@ -22,6 +22,7 @@ Go implementations of data structures and algorithms exercises from a [Boot.dev 
 | [`queues`](queues/) | Enqueue, peek, and dequeue items in first-in, first-out order. |
 | [`linked-lists`](linked-lists/) | Add, remove, traverse, and count nodes in a singly linked list. |
 | [`doubly-linked-lists`](doubly-linked-lists/) | Add and remove nodes at both ends, and traverse in either direction. |
+| [`binary-trees`](binary-trees/) | Insert, search, delete, and traverse users in a binary search tree. |
 
 Each directory has a standalone `main.go` with example inputs. To run an exercise from the repository root, use:
 
@@ -42,5 +43,6 @@ go run ./stacks
 go run ./queues
 go run ./linked-lists
 go run ./doubly-linked-lists
+go run ./binary-trees
 ```
 
