@@ -21,7 +21,6 @@ type HashMap struct {
 }
 
 // NewHashMap creates a hash map with the given number of buckets.
-// Time complexity: O(capacity), Space complexity: O(capacity)
 func NewHashMap(capacity int) *HashMap {
 	if capacity <= 0 {
 		panic("hashmap capacity must be greater than zero")
@@ -52,19 +51,16 @@ func (h *HashMap) keyToIndex(key string) int {
 }
 
 // LoadFactor returns the number of entries divided by the number of buckets.
-// Time complexity: O(1), Space complexity: O(1)
 func (h *HashMap) LoadFactor() float64 {
 	return float64(h.size) / float64(len(h.buckets))
 }
 
 // Len returns the number of entries.
-// Time complexity: O(1), Space complexity: O(1)
 func (h *HashMap) Len() int {
 	return h.size
 }
 
 // Capacity returns the number of buckets.
-// Time complexity: O(1), Space complexity: O(1)
 func (h *HashMap) Capacity() int {
 	return len(h.buckets)
 }
