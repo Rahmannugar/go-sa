@@ -24,6 +24,7 @@ Go implementations of data structures and algorithms exercises from a [Boot.dev 
 | [`doubly-linked-lists`](doubly-linked-lists/) | Add and remove nodes at both ends, and traverse in either direction. |
 | [`binary-trees`](binary-trees/) | Insert, search, delete, and traverse users in a binary search tree. |
 | [`red-black-trees`](red-black-trees/) | Insert, search, and traverse users in a self-balancing tree. |
+| [`hash-maps`](hash-maps/) | Store, find, and delete entries in a resizable hash map. |
 
 Each directory has a standalone `main.go` with example inputs. To run an exercise from the repository root, use:
 
@@ -46,5 +47,6 @@ go run ./linked-lists
 go run ./doubly-linked-lists
 go run ./binary-trees
 go run ./red-black-trees
+go run ./hash-maps
 ```
 
