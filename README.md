@@ -26,6 +26,7 @@ Go implementations of data structures and algorithms exercises from a [Boot.dev 
 | [`red-black-trees`](red-black-trees/) | Insert, search, and traverse users in a self-balancing tree. |
 | [`hash-maps`](hash-maps/) | Store, find, and delete entries in a resizable hash map. |
 | [`tries`](tries/) | Store words, search by prefix, and find words in a document. |
+| [`graphs`](graphs/) | Represent undirected graphs with an adjacency matrix and adjacency list. |
 
 Each directory has a standalone `main.go` with example inputs. To run an exercise from the repository root, use:
 
@@ -50,5 +51,6 @@ go run ./binary-trees
 go run ./red-black-trees
 go run ./hash-maps
 go run ./tries
+go run ./graphs
 ```
 
